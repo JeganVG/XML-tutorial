@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:globalstudents xmlns:tns="http://www.example.org/demoSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/demoSchema demoSchema.xsd ">
+  <tns:student sid="idvalue0">
+    <tns:name>Jegan</tns:name>
+    <tns:rollno>1000</tns:rollno>
+  </tns:student>
+  
+   <tns:student sid="idvalue1">
+    <tns:name>Megan</tns:name>
+    <tns:rollno>1100</tns:rollno>
+  </tns:student>
+  
+</tns:globalstudents>

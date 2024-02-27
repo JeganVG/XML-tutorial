@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/demoSchema"
+	xmlns:tns="http://www.example.org/demoSchema"
+	elementFormDefault="qualified">
+
+	<complexType name="studentstype">
+		<sequence>
+			<element name="student" type="tns:studenttype" maxOccurs="3" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="studenttype">
+		<sequence>
+			<element name="name" type="string"></element>
+			<element name="rollno" type="tns:mySal"></element>
+		</sequence>
+		<attribute name="sid" type="ID" use="required"></attribute>
+	</complexType>
+	
+	<simpleType name="mySal">
+		<restriction base="integer">
+			<minInclusive value="1000"></minInclusive>
+			<maxInclusive value="10000"></maxInclusive>
+		</restriction>
+    </simpleType>
+	<element name="globalstudents" type="tns:studentstype"></element>
+
+</schema>
